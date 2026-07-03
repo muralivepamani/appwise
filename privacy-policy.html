@@ -42,6 +42,18 @@ footer{padding:44px 0;background:var(--surface)}
 .foot{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--body)}
 .foot a{color:var(--ink);text-decoration:none;font-weight:600;margin-left:20px}
 .foot a:hover{color:var(--brand)}
+@media(max-width:640px){
+  nav{height:60px}
+  .logo-word{height:24px}
+  .logo-sub{display:none}
+  .nav-links{gap:2px}
+  .nav-links a{font-size:13px;padding:8px 10px}
+  main{padding:44px 0 64px}
+  h2{margin-top:36px}
+  .callout{padding:16px 18px}
+  .foot{flex-direction:column;gap:12px}
+  .foot a{margin-left:0;margin-right:18px}
+}
 @media (prefers-reduced-motion: reduce){*{transition:none !important}}
 :focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
 </style>
